@@ -1,0 +1,98 @@
+*
+{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+@import url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css');
+.container
+{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  background-color: #011a39; 
+  flex-direction: column;
+  row-gap: 40px;
+}
+input[type='search']
+{
+  outline:none; 
+  height:24px;
+}
+input[type='submit']
+{
+  padding:2.9px;
+  /* border:none; */
+}
+.container >.weather-report
+{
+  width:40vw;
+  border-radius:15px;
+  box-shadow: 6px 6px 5px 0px rgba(9, 8, 10, 0.75);
+  overflow: hidden;
+}
+.weather-report>.image
+{
+  text-align: center;
+  background-color: white;
+  font-size: 5rem;
+  padding: 30px 0;
+}
+.weather-report .weather-info
+{
+  display: flex;
+  align-items: center;
+  background-color: #a4fbe3;
+}
+.weather-info .col-1
+{
+  display:flex;
+  color:white;
+  /* flex-shrink:0; */
+  width:70%;
+  padding:30px 10px;
+  column-gap: 20px;
+  background-color: black;
+}
+.col-1 .temperature
+{
+  font-size: 3rem;
+}
+.other .condition
+{
+  font-size: 1.8rem;
+}
+.other .place
+{
+  font-size: 0.8rem;
+}
+.weather-info .col-2
+{
+  
+  font-size: 2rem;
+  color:white;
+  font-weight: bold;
+  text-align: center;
+}
+.two-sided-section
+{
+  padding:10px 20px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  height:100px;
+  align-items: center;
+  background-color: white;
+}
+.section
+{
+  display:flex;
+  align-items: center;
+  color:black;
+}
+.section .pic
+{
+  color:#64c4ed;
+  font-size:1.25rem;
+  margin-right:5px;
+}
